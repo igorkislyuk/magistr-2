@@ -1,0 +1,54 @@
+\documentclass[a4paper, landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[a4paper,landscape]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{calc}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\useunder{\uline}{\ul}{}
+\textwidth = 800pt
+\hoffset = -105pt
+\thispagestyle{empty}
+\begin{document}
+\centering\section*{\textbf{ПРЕДСТАВЛЕНИЕ}\\}
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\multicolumn{2}{c}{на присвоение (подтверждение),юношеских спортивных разрядов, I спортивного разряда, II спортивного разряда, III спортивного разряда}\\
+\cline{1-2}
+& {Региональная спортивная федерация спортивного туризма,Санкт-Петербурга}\\
+\cline{2-2}
+{по виду спорта} & {Спортивный туризм}\\
+\cline{2-2}
+\end{tabular}
+\end{table}
+\centering
+\begin{longtable}{|C{0.015\textwidth}|C{0.13\textwidth}|C{0.08\textwidth}|C{0.075\textwidth}|C{0.07\textwidth}|C{0.24\textwidth}|C{0.08\textwidth}|C{0.1\textwidth}|}
+\hline
+{№}&{Ф.И.О.}&{Дата\newlineрождения}&{Наличие\newlineспортивного\newlineразряда}&{Дата\newlineвыполнения\newlineразряда}&{Наименование соревнований, место и сроки проведения}&{Показанный\newlineрезультат}&{Ф.И.О. тренера-преподавателя}\\\hline
+{1}&{ФИО}&{31.05.1997}&{КМС}&{12.02.2017}&\multirow{2}{0.24\textwidth}{Соревнования}&{1 Место}&{Тренер Т. Т.}\\[5em]\cline{1-5}\cline{7-8}
+\hline
+\endfoot
+\end{longtable}
+
+\renewcommand{\arraystretch}{1}
+\begin{flushleft}
+\begin{table}[!htbp]
+\hspace{0.08\textwidth}
+\begin{tabular}{L{0.23\textwidth}C{0.13\textwidth}C{0.3\textwidth}}
+{Здесь будет важный}&\rule{2cm}{0.5pt}&\rule{4cm}{0.5pt}\\
+&{подпись}&{Ф.И.О.}\\
+{ССК <<Кронверские барсы>>}&\rule{0pt}{20pt}{\rule{2cm}{0.5pt}}&\rule{0pt}{20pt}{\rule{4cm}{0.5pt}}\\
+&{подпись}&{Ф.И.О.}\\
+\rule{0pt}{24pt}&&\\
+<<\rule{0.7cm}{0.5pt}>> \rule{2.5cm}{0.5pt} 2018 год&&
+\end{tabular}
+\end{table}
+\end{flushleft}
+\end{document}
