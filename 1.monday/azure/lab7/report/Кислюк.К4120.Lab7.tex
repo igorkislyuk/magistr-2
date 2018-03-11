@@ -29,7 +29,7 @@
 
 % caption | screenshot index
 \newcommand{\screenshot}[2]{\begin{figure}[ht]%
-\centering\includegraphics[width=0.8\textwidth]{../Screenshots/Screenshot_#2}%
+\centering\includegraphics[width=0.8\textwidth]{../Screenshots/#2}%
 \caption{#1}%
 \label{picture#2}%
 \end{figure}%
@@ -74,7 +74,7 @@
 		Отчет по лабораторной работе
 		
 		\fontseries{m}\fontsize{20pt}{18pt}\selectfont
-		\textbf{Microsoft Azure. Знакомство}\\
+		\textbf{Creating a SQL Database in Azure}\\
 		\vspace*{1.15\baselineskip}
 		\end{center}
 	
@@ -106,12 +106,23 @@
 
 \header{Ход работы}
 
-\screenshot{Пример dashboard}{1}
-\screenshot{Пример подписок}{2}
-\screenshot{Пример квоты}{3}
+Create a new Azure SQL database in Azure and configure SQL Server firewall rules
+\screenshot{Создание базы данных}{1}
+\screenshot{Установка параметров для сервера}{2}
+\screenshot{Выбор типа обслуживания}{3}
+\screenshot{Настройка параметров}{4}
+\screenshot{Настройка доступа через файрфол}{5}
 
 \clearpage
+Manage content of an Azure SQL database by using SQL Server Management Studio
+\screenshot{Окно подключения к базе данных}{6}
+\screenshot{Проверка подключения}{7}
+\screenshot{Создание таблицы}{8}
+\screenshot{Проверка созданной таблицы}{9}
+\screenshot{Вставка данных}{10}
+\screenshot{Проверка доступа к данным}{11}
 
+\clearpage
 \header{Вывод}
 
 Было проведено ознакомление с технологиями Azure

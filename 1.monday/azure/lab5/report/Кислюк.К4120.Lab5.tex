@@ -29,7 +29,7 @@
 
 % caption | screenshot index
 \newcommand{\screenshot}[2]{\begin{figure}[ht]%
-\centering\includegraphics[width=0.8\textwidth]{../Screenshots/Screenshot_#2}%
+\centering\includegraphics[width=0.8\textwidth]{../Screenshots/#2}%
 \caption{#1}%
 \label{picture#2}%
 \end{figure}%
@@ -74,7 +74,7 @@
 		Отчет по лабораторной работе
 		
 		\fontseries{m}\fontsize{20pt}{18pt}\selectfont
-		\textbf{Microsoft Azure. Знакомство}\\
+		\textbf{Create and configure virtual networks}\\
 		\vspace*{1.15\baselineskip}
 		\end{center}
 	
@@ -106,12 +106,28 @@
 
 \header{Ход работы}
 
-\screenshot{Пример dashboard}{1}
-\screenshot{Пример подписок}{2}
-\screenshot{Пример квоты}{3}
+\begin{enumerate}
+\item Creating virtual networks
+\item Verifying virtual network functionality
+\end{enumerate}
+
+\screenshot{Создание первой сети}{1}
+\screenshot{Создание второй сети}{2}
+\screenshot{Добавление первого пиринга}{3}
+\screenshot{Добавление второго пиринга}{4}
+\screenshot{Создание виртуальной машины}{5}
+\screenshot{Настройка сети виртуальной машины}{6}
+\screenshot{Создание второй виртуальной машины}{7}
+\screenshot{Настройка сети второй виртуальной машины}{8}
+\screenshot{Подключение к виртуальной машине}{9}
+\screenshot{Запущенная виртуальная машина}{10}
+\screenshot{Получение сетевого адреса}{11}
+\screenshot{Подключение по приватному адресу}{12}
+\screenshot{Ввод аутентификационных данных}{13}
+\screenshot{Подключенная виртуальная машина}{14}
+\screenshot{Удаление групп ресурсов}{15}
 
 \clearpage
-
 \header{Вывод}
 
 Было проведено ознакомление с технологиями Azure
