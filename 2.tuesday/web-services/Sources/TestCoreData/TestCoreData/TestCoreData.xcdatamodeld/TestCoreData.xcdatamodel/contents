@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="category_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="sport_kind" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SportKind" syncable="YES"/>
+    </entity>
+    <entity name="Competition" representedClassName="Competition" syncable="YES" codeGenerationType="class">
+        <attribute name="datetime" optional="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" syncable="YES"/>
+        <relationship name="category_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" syncable="YES"/>
+        <relationship name="place_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" syncable="YES"/>
+        <relationship name="usernames" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="birthday" optional="YES" syncable="YES"/>
+        <attribute name="father_name" optional="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" syncable="YES"/>
+        <attribute name="sport_level" optional="YES" syncable="YES"/>
+        <attribute name="surname" optional="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName="Place" syncable="YES" codeGenerationType="class">
+        <attribute name="end_time" optional="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" syncable="YES"/>
+        <attribute name="interval" optional="YES" syncable="YES"/>
+        <attribute name="place_description" optional="YES" syncable="YES"/>
+        <attribute name="start_time" optional="YES" syncable="YES"/>
+    </entity>
+    <entity name="Role" representedClassName="Role" syncable="YES" codeGenerationType="class">
+        <attribute name="priority_number" optional="YES" syncable="YES"/>
+        <attribute name="role_description" optional="YES" syncable="YES"/>
+        <relationship name="username" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="SportKind" representedClassName="SportKind" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" syncable="YES"/>
+        <attribute name="sport_description" optional="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-216" positionY="-153" width="128" height="88"/>
+        <element name="Competition" positionX="-72" positionY="72" width="128" height="133"/>
+        <element name="Person" positionX="216" positionY="36" width="128" height="148"/>
+        <element name="Place" positionX="-144" positionY="279" width="128" height="118"/>
+        <element name="Role" positionX="43" positionY="-63" width="128" height="88"/>
+        <element name="SportKind" positionX="-2" positionY="-207" width="128" height="75"/>
+    </elements>
+</model>
