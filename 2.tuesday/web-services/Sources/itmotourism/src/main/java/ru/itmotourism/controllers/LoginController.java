@@ -31,7 +31,7 @@ public class LoginController {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         ModelAndView modelAndView = new ModelAndView();
-        System.out.println("login:"+login+"; password:"+password);
+//        System.out.println("login:"+login+"; password:"+password);
         People people = peopleRepository.findByUserName(login);
         Passwords passwords = passwordRepository.findByUserName(people.getUserName());
         if(passwords.getPassword().equals(password)){
